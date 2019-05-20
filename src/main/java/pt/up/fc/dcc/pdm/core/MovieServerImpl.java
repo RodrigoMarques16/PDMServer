@@ -55,7 +55,7 @@ class MovieServerImpl implements MovieServer {
             row.getInt("id"),
             row.getString("name"), 
             row.getInt("year"), 
-            row.getString("genre"), 
+            row.getSet("tags", String.class),
             new Length(
                 row.getInt("hours"), 
                 row.getInt("minutes"), 

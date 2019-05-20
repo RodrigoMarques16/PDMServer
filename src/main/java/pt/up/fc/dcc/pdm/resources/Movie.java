@@ -1,6 +1,7 @@
 package pt.up.fc.dcc.pdm.resources;
 
 import java.io.Serializable;
+import java.util.Set;
 /**
  * Movie
  */
@@ -11,15 +12,15 @@ public class Movie implements Serializable{
     private int id;
     private String name;
     private int year;
-    private String genre;
+    private Set<String> tags;
     private String url;
     private Length length;
 
-    public Movie(int id, String name, int year, String genre, Length length, String url) {
+    public Movie(int id, String name, int year, Set<String> tags, Length length, String url) {
         this.id = id;
         this.name = name;
         this.year = year;
-        this.genre = genre;
+        this.tags = tags;
         this.length = length;
         this.url = url;
     }
@@ -48,8 +49,8 @@ public class Movie implements Serializable{
     /**
      * @return the tags
      */
-    public String getGenre() {
-        return genre;
+    public Set<String> getTags() {
+        return tags;
     }
 
     /**
