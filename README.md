@@ -2,8 +2,6 @@
 
 A simple RESTful web service realized with Maven, Jersey and Jetty.
 
-Resources in this context are actual files stored in your project root and organized within a HashMap.
-
 | Endpoint      | HTTP Method   | Response  |
 | ------------- |:-------------:| -----:|
 | /resources    | GET           | A list of available resources |
@@ -12,12 +10,3 @@ Resources in this context are actual files stored in your project root and organ
 | /resources/{id} | DELETE      | HTTP Status code |
 
 ## Usage
-
-**Start the server**
-
-```compile exec:java```
-
-**Check if it works**
-
-```curl "http://localhost:8080/resources/1"```
-
