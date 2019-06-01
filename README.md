@@ -11,4 +11,4 @@ A simple RESTful web service realized with Maven, Jersey and Jetty.
 
 `mvn package`
 
-`java -jar ./target/REST-1.0-jar-with-dependencies.jar
+`java -jar ./target/REST-1.0-jar-with-dependencies.jar`
